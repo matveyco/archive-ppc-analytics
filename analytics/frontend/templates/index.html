@@ -1,0 +1,20 @@
+{% extends 'common.html' %}
+{% block main %}
+<section class="content">
+	<div class="video-container video-autoplay">
+		<video controls autoplay>
+			<source src="http://media.w3.org/2010/05/sintel/trailer.webm" type="video/webm">
+			<p>Your browser does not support WebM.</p>
+		</video>
+	</div>
+	<div class="video-container">
+		<video controls>
+			<source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.webm" type="video/webm">
+			<p>Your browser does not support WebM.</p>
+		</video>
+	</div>
+	<div id="swf_tracker">
+		<embed class="swf" wmode=transparent allowfullscreen="true" allowscriptaccess="always" src="/img/sunmotions.swf"></embed>
+	</div>
+</section>
+{% endblock %}

@@ -1,0 +1,68 @@
+<tr>
+	<td>{{ year }}-{{ month }}-{{ day }}</td>
+	<td>{{ web_id }}</td>
+	<td>{{ sub_id }}</td>
+	{% if data.count_hits %}
+		<td>{{ data.count_hits|default(0) }}</td>
+		<td>{{ data.count_hosts|default(0) }}</td>
+		<td>{{ (data.count_hits/data.count_hosts)|default(0)|round(2, 'floor') }}</td>
+		<td>{{ data.avg_host_time|default(0) }}</td>
+		<td>{{ data.avg_hit_time|default(0) }}</td>
+		<td>{{ data.flash_click_host_avg|default(0)|round(2, 'floor') }}</td>
+		<td>{{ data.flash_click_host_sum|default(0) }}</td>
+		<td>{{ data.flash_click_hit_avg|default(0)|round(2, 'floor') }}</td>
+		<td>{{ data.flash_click_hit_sum|default(0) }}</td>
+		<td>{{ data.js_click_host_avg|default(0)|round(2, 'floor') }}</td>
+		<td>{{ data.js_click_host_sum|default(0) }}</td>
+		<td>{{ data.js_click_hit_avg|default(0)|round(2, 'floor') }}</td>
+		<td>{{ data.js_click_hit_sum|default(0) }}</td>
+		<td>{{ data.h5v_click_host_avg|default(0)|round(2, 'floor') }}</td>
+		<td>{{ data.h5v_click_host_sum|default(0) }}</td>
+		<td>{{ data.h5v_click_hit_avg|default(0)|round(2, 'floor') }}</td>
+		<td>{{ data.h5v_click_hit_sum|default(0) }}</td>
+		<td>{{ data.inner_click_host_avg|default(0)|round(2, 'floor') }}</td>
+		<td>{{ data.inner_click_host_sum|default(0) }}</td>
+		<td>{{ data.outer_click_host_avg|default(0)|round(2, 'floor') }}</td>
+		<td>{{ data.outer_click_host_sum|default(0) }}</td>
+		<td>{{ data.real_js_host|default(0) }}</td>
+		<td>{{ data.decl_js_host|default(0) }}</td>
+		<td>{{ data.decl_java_host|default(0) }}</td>
+		<td>{{ data.flash_host|default(0) }}</td>
+		<td>{{ data.cookie_host|default(0) }}</td>
+		<td>{{ data.autoplay_host|default(0) }}</td>
+		<td>{{ data.redirect_301_host|default(0) }}</td>
+		<td>{{ data.redirect_302_host|default(0) }}</td>
+		<td>{{ data.redirect_307_host|default(0) }}</td>
+	{% else %}
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>
+		<td>—</td>		
+	{% endif %}
+</tr>

@@ -1,0 +1,226 @@
+/* ---------------------------------------- */
+/* ----- Blue Style----- */
+/* ---------------------------------------- */
+
+body {
+    background: #7f8c8d;
+}
+
+::selection {
+    background: #3498db;
+    color: white;   
+}
+
+::-moz-selection {
+    background: #3498db;
+    color: white;
+}
+
+/* ---------------------------------------- */
+/* ----- Navigation ----- */
+/* ---------------------------------------- */
+
+.nav {
+    background: #2c3e50;
+}
+
+.nav a {
+    color: white !important;
+}
+
+.nav li:nth-child(2) a {
+    background: #3498db;
+}
+
+.nav li:nth-child(2) a:hover, .nav li:nth-child(2).active a {
+    color: #3498db !important;
+}
+
+.nav li:nth-child(3) a {
+    background: #2980b9;
+}
+
+.nav li:nth-child(3) a:hover, .nav li:nth-child(3).active a {
+    color: #2980b9 !important;
+}
+
+.nav li:nth-child(4) a {
+    background: #34495e;
+}
+
+.nav li:nth-child(4) a:hover, .nav li:nth-child(4).active a {
+    color: #34495e !important;
+}
+
+.nav li:nth-child(5) a {
+    background: #2c3e50;
+}
+
+.nav li:nth-child(5) a:hover, .nav li:nth-child(5).active a {
+    color: #2c3e50 !important;
+}
+
+/* ---------------------------------------- */
+/* ----- Resume ----- */
+/* ---------------------------------------- */
+
+/* ----- Icon Color ----- */
+.ro-timeline > li .ro-icon {
+    color: #3498db;
+}
+
+/* ---------------------------------------- */
+/* ----- Skills ----- */
+/* ---------------------------------------- */
+
+.sidebar h3 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3498db;
+}
+
+.skills span {
+    background: #3498db;
+}
+
+.skills li:nth-child(even) span {
+    background: #2980b9;
+}
+
+.skills span:hover {
+    background: #2c3e50 !important;
+}
+
+.rt-spanbg {
+    background: #3498db !important;
+}
+
+/* ---------------------------------------- */
+/* ----- Profile ----- */
+/* ---------------------------------------- */
+
+.p-details a:hover {
+    background: #3498db;
+    color: white;
+}
+
+/* ---------------------------------------- */
+/* ----- Social Icons ----- */
+/* ---------------------------------------- */
+
+.social a:hover {
+    background: #3498db;
+    color: white;
+    height: 35px;
+}
+
+/* ---------------------------------------- */
+/* ----- Work ----- */
+/* ---------------------------------------- */
+
+/* ----- Filter ----- */
+
+.gridfilter li:hover {
+    color: white !important;
+    background: #2c3e50;
+}
+
+.activefilter {
+    background: #3498db !important;
+    color: white;
+}
+
+/* ---------------------------------------- */
+/* ----- Single Project ----- */
+/* ---------------------------------------- */
+
+.project-nav a:hover {
+    background: #2c3e50;
+    color: white;
+}
+
+
+/* ---------------------------------------- */
+/* ----- Nivo Slider ----- */
+/* ---------------------------------------- */
+
+/* ----- Control Navigation ----- */
+
+.theme-default .nivo-controlNav a {
+  background: #2c3e50;
+  border: 2px solid #2c3e50;
+  box-shadow: inset 0 0 0 4px white;
+}
+
+.theme-default .nivo-controlNav a:hover {
+  background: #3498db;
+  border: 2px solid #3498db;
+  box-shadow: inset 0 0 0 3px white;
+}
+
+.theme-default .nivo-controlNav a.active {
+  background: #3498db;
+  border: 2px solid #3498db;
+  box-shadow: inset 0 0 0 2px white;
+}
+
+
+/* ---------------------------------------- */
+/* ----- Contact ----- */
+/* ---------------------------------------- */
+
+.contact form input[type="text"]:focus, 
+.contact form input[type="email"]:focus, 
+.contact form textarea:focus { 
+    border: 2px solid #3498db;
+    color: #999;
+}
+
+.contact form input[type="text"]:required:valid, 
+.contact form input[type="email"]:required:valid, 
+.contact form textarea:required:valid { 
+    border: 2px solid #3498db;
+    color: #3498db;
+} 
+
+.contact form .radio:hover {
+    background: #2c3e50;
+    color: white;
+}
+
+.contact form input[type="radio"]:checked + label {
+    background: #3498db;
+}
+
+.contact form .required { 
+    color: #3498db;
+}
+
+.contact form input[type="submit"]:hover { 
+    color: #fff;
+    background: #3498db;
+    cursor: pointer;
+}
+
+/* ---------------------------------------- */
+/* ----- Media Queries ----- */
+/* ---------------------------------------- */
+
+@media screen and (max-width: 767px) {
+
+    .nav a {
+        background: #3498db !important;
+    }
+    
+    .nav li:nth-child(2) a:hover, .nav li:nth-child(2).active a,
+    .nav li:nth-child(3) a:hover, .nav li:nth-child(3).active a,
+    .nav li:nth-child(4) a:hover, .nav li:nth-child(4).active a,
+    .nav li:nth-child(5) a:hover, .nav li:nth-child(5).active a
+    {
+        color: #3498db !important;
+        background: white !important;
+    }
+
+    #nav-toggle {
+        background: #3498db url("../../img/hamburger.gif") no-repeat 50% 50%;
+    }
+}

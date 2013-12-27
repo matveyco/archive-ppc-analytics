@@ -1,0 +1,80 @@
+Placeholders in examples:
+	<web_id> — webmaster's ID
+	<sub_id> — webmaster's subID
+	<year> — year
+	<month> — month
+	<day> — day
+
+API description:
+
+	Get stats for last day in corresponding formats, <web_id> — webmaster's ID
+		http://example.com/api/xml/<web_id>/
+		http://example.com/api/json/<web_id>/
+
+	Get stats for some date:		
+		http://example.com/api/json/<web_id>/<sub_id>/<year>/<month>/<day>/
+		http://example.com/api/json/<web_id>/<sub_id>/<year>/<month>/<day>/
+
+	Examples:
+		http://example.com/api/xml/18/
+		http://example.com/api/json/3/17/2011/8/5/
+		
+		
+Main page description:
+	Default (<web_id> = <web_id> = 0)
+		http://example.com/
+	For defined webmaster:
+		http://example.com/<web_id>/<sub_id>/
+		
+
+Admin page description:
+	
+	For add «sID»'s of webmaster (current day)
+		http://example.com/admin/<web_id>/
+	For only one subID (current day)
+		http://example.com/admin/<web_id>/<sub_id>/
+	For only one subID (defined day)
+		http://example.com/admin/<web_id>/<sub_id>/<year>/<month>/<day>/
+
+Admin page & API fields:
+
+	for one day, one webmaster (& one sub_id)
+
+	Admin	API					Description	
+	===============================================
+	ID		web_id					Webmaster ID
+	sID		sub_id					Webmaster subID
+	<none>	year					Year
+	<none>	month					Month
+	<none>	day						Day
+	HS		count_hosts				All unique hosts by day
+	HT		count_hits				All hits by day
+	PW		<calculated>			(PW = HT/HS) Page views, avg.
+	THS		avg_host_time			Average time spent by one host on all pages
+	THT		avg_hit_time			Average time spent by each hit per page
+	FCHSA	flash_click_host_avg	Average of flash clicks by host on all pages
+	FCHSS	flash_click_host_sum	Count of flash clicks by host on all pages
+	FCHTA	flash_click_hit_avg		Average of flash clicks by each hit per page
+	FCHTS	flash_click_hit_sum		Count of flash clicks by each hit per page
+	JCHSA	js_click_host_avg		Average of clicks on js-links by one host on all pages
+	JCHSS	js_click_host_sum		Count of clicks on js-links by one host on all pages
+	JCHTA	js_click_hit_avg		Average of clicks on js-links by each hit per page
+	JCHTS	js_click_hit_sum		Count of clicks on js-links by each hit per page
+	HCHSA	h5v_click_host_avg		Average of clicks on HTML5-video by one host on all pages
+	HCHSS	h5v_click_host_sum		Count of clicks on HTML5-video by one host on all pages
+	HCHTA	h5v_click_hit_avg		Average of clicks on HTML5-video by each hit per page
+	HCHTS	h5v_click_hit_sum		Count of clicks on HTML5-video by each hit per page
+	ICHSA	inner_click_host_avg	Average of clicks on internal links by one host on all pages
+	ICHSS	inner_click_host_sum	Count of clicks on internal links by one host on all pages
+	OCHSA	outer_click_host_avg	Average of clicks on external links by one host on all pages
+	OCHSS	outer_click_host_sum	Count of clicks on external links by one host on all pages
+	RJSHS	real_js_host			Host count with JS support (real)
+	DJSHS	decl_js_host			Host count with JS support (from User-Agent)
+	DJVHS	decl_java_host			Host count with Java support (from User-Agent)
+	FHS		flash_host				Host count with Flash support (real)
+	CHS		cookie_host				Host count with Cookies support (real)
+	APHS	autoplay_host			Host count with HTML5 video autoplay support (real)
+	HS301	redirect_301_host		Host count with HTTP 301 redirect support (real)
+	HS302	redirect_302_host		Host count with HTTP 302 redirect support (real)
+	JS307	redirect_307_host		Host count with JS redirect support (real)
+

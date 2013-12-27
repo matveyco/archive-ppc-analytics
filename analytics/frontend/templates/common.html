@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+{% include 'header.html' %}
+<body>
+
+	<div id="hit_id" class="hidden">{{ current_hit_id }}</div>
+	<div id="host_id" class="hidden">{{ current_host_id }}</div>
+	<div id="web_id" class="hidden">{{ web_id }}</div>
+	<div id="sub_id" class="hidden">{{ sub_id }}</div>
+
+	<div class="container">
+		{% include 'header_top.html' %}
+		{% block main %}{% endblock %}
+	</div>
+</body>
+</html>
